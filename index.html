@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Chatbot</title>
+</head>
+<body>
+  <h1>My Chatbot</h1>
+  <input id="msg" placeholder="Say something">
+  <button onclick="send()">Send</button>
+  <p id="reply"></p>
+
+  <script>
+    function send() {
+      const text = document.getElementById("msg").value;
+      document.getElementById("reply").innerText = "You said: " + text;
+    }
+  </script>
+</body>
+</html>
